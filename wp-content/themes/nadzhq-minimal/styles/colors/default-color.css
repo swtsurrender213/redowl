@@ -1,0 +1,287 @@
+/*
+Color: Default
+Theme URI: http://nadzhq.com
+Author: Nadeem Akram
+Author URI: http://nadzhq.com/
+Description: Full Screen Wordpress theme by nadzhq.com.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black,blue,pink,dark,one-column,responsive-layout,custom-background,theme-options,seasonal,photoblogging,holiday
+Text Domain:nadzhq
+
+*/
+
+
+/* Background Color And Shades */
+
+
+
+
+
+h1,h2,h3,h4,h5{color:#fff; }
+
+/* Links */
+
+input, button, select, textarea{color:#78848b!important;}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+   
+}
+a {
+    color: #cf1e24;
+}
+#content a{ color: #cf1e24!important;}
+
+#sidebar-wrapper {
+   background-color:#cf1e24;
+
+	}
+
+#sidebar-wrapper ul.sf-menu{/*padding-top:8px;padding-bottom:8px;*/}
+
+	h1.page-title{color:#cf1e24;}
+
+
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #cf1e24!important;
+    
+}
+
+
+.sf-menu ul {
+	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+
+}
+
+
+
+
+ul.sub-menu a:hover{color:#cf1e24;}
+
+.sf-menu a:hover i{color:#cf1e24;}
+
+
+.sf-menu a,.sf-menu a:hover,.sf-menu a:focus,.sf-menu a:active {
+	color: #fff;
+
+}
+
+.sf-menu ul li {
+	background: #000;
+  border-bottom:0px;
+}
+
+.sf-menu ul ul li {
+	background: #000;
+}
+
+
+.sf-arrows .sf-with-ul:after {
+
+	/* order of following 3 rules important for fallbacks to work */
+	border: 5px solid transparent;
+	border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+	border-top-color: rgba(255,255,255,.5);
+}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: white; /* IE8 fallback colour */
+}
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {
+
+	border-color: transparent;
+	
+}
+
+
+.sidebar-nav li a:hover {
+  color: #fff;
+ 
+ 
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+ 
+}
+
+
+/*nadzhq Toggle Menu*/
+.nadzhq-toggle-menu{background-color:#cf1e24!important;border:1px solid #008492!important;}
+.nadzhq-toggle-menu i{color:#fff;}
+
+
+
+
+/*Modal*/
+
+.modal-content{border-radius: 0px!important;background-color: #1f2325!important;}
+.modal-content .modal-header{color:#cf1e24;border-bottom: 1px solid #151819;}
+.modal-content .modal-body{color:#fff;}
+
+
+/*Footer Para*/
+
+p.footer-para{color:#fff;border-left:1px solid #2c2c2c;}
+
+/*Button Primary*/
+.btn-primary{color:#fff!important;}
+
+
+
+.slideshow-text-container h3{
+
+    color:#fff;
+
+}
+
+
+.slideshow-text-container p{
+
+color:#78848b;
+
+
+}
+
+
+.page-header {
+    border-bottom: 1px solid #151819!important;
+  
+  
+}
+
+
+
+
+/*Styling Scrollbar*/
+.mCSB_scrollTools .mCSB_draggerRail{
+background-color:#000!important;
+
+
+}
+
+
+a.mCSB_buttonUp:before{
+ 
+
+    color:#cf1e24;
+
+
+}
+
+
+.mCSB_buttonDown:before{ content: "\f107";
+    
+
+    color:#cf1e24;
+}
+
+
+/* ---------------------------------------------------------------------------------------
+    01. CURRENT MENU ITEM
+--------------------------------------------------------------------------------------- */
+
+li.current-menu-item{background-color:#000;}
+li.current-menu-item a i{color:#004850;}
+
+
+
+#sidebar .delta_widget_flickr a .image-overlay {
+    background-color: #000000;
+   
+}
+
+#footer .popular-posts:hover img,
+#footer .recent-comments:hover img,
+#footer .recent-posts:hover img {
+    border: 2px solid #EC4C4C;
+   
+}
+
+#footer .popular-posts img,
+#footer .recent-comments img,
+#footer .recent-posts img {
+  
+    border: 2px solid #1C1C1C;
+   
+}
+
+#sidebar .delta_widget_tagscloud a {
+    border: 1px solid #DDD;
+}
+
+#sidebar-core a:hover{color:#fff!important;}
+#sidebar-core a {
+    color: #cf1e24;
+ 
+}
+
+#sidebar-core h3{background-color:#cf1e24;}
+
+#sidebar{background-color:rgba(30, 34, 36,0.9);}
+
+.pagination .current{
+
+background: #cf1e24;
+color:#fff;
+}
+
+.pagination a:hover{
+color:#fff;
+background: #cf1e24;
+}
+
+.pagination span, .pagination a {
+
+color:#fff;
+background: #555;
+}
+
+
+/* ---------------------------------------------------------------------------------------
+    01. Theming Comments.php
+--------------------------------------------------------------------------------------- */
+#commentform p{color:#78848b;}
+
+.comments-thread li i{color:#cf1e24;}
+
+
+/*Alternate Colors For Posts*/
+.default-post.even,.comments-thread li.odd{background-color:rgba(30, 34, 36,0.9);border-top: 1px dotted #000;border-bottom: 1px dotted #000;}
+
+
+/*Default Entry Meta*/
+.default-post .entry-meta{
+
+}
+
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+	background: #000000;
+	
+}
+
+/*Default Post Title*/
+.default-post{}
+.default-post a,.default-post a:hover{color:#cf1e24;}
+
+
+/*Default Post Title*/
+.default-post h2 a{color:#fff;}
+.default-post h2 a i{color:#cf1e24;}
+.default-post h2 a:hover{color:#cf1e24;}
+
+
+
+
+
+

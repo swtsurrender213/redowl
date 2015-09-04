@@ -1,0 +1,29 @@
+/*----------------------------------------------------
+	Left Sidebar
+---------------------------------------------------- */
+#main {
+	float: right;
+	width: 75%;
+	display: block;
+}
+#main-core {
+	margin-left: 20px;
+}
+#sidebar {
+	display: block;
+	float: right;
+	overflow:hidden;
+	width: 25%;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	
+}
+#sidebar {
+	display: block;
+	float: left;
+	width: 25%;
+}
+#sidebar-core {
+	margin-right:0px;
+}
