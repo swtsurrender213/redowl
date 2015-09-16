@@ -8599,64 +8599,64 @@ msgstr "Could not insert link into the database"
 msgid "Could not update link in the database"
 msgstr "Could not update link in the database"
 
-#: wp-admin/includes/ajax-actions.php:2951
+#: wp-admin/includes/ajax-actions.php:2953
 msgid "Unable to connect to the filesystem. Please confirm your credentials."
 msgstr "Unable to connect to the filesystem. Please confirm your credentials."
 
-#: wp-admin/includes/ajax-actions.php:2904
+#: wp-admin/includes/ajax-actions.php:2906
 msgid "You do not have sufficient permissions to update plugins on this site."
 msgstr "You do not have sufficient permissions to update plugins on this site."
 
 #. translators: 1: User's display name.
-#: wp-admin/includes/ajax-actions.php:2871
+#: wp-admin/includes/ajax-actions.php:2873
 msgid "%s has been logged out."
 msgstr "%s has been logged out."
 
-#: wp-admin/includes/ajax-actions.php:2867
+#: wp-admin/includes/ajax-actions.php:2869
 msgid "You are now logged out everywhere else."
 msgstr "You are now logged out everywhere else."
 
-#: wp-admin/includes/ajax-actions.php:2859
+#: wp-admin/includes/ajax-actions.php:2861
 msgid "Could not log out user sessions. Please try again."
 msgstr "Could not log out user sessions. Please try again."
 
-#: wp-admin/includes/ajax-actions.php:2772
+#: wp-admin/includes/ajax-actions.php:2774
 msgid "This preview is unavailable in the editor."
 msgstr "This preview is unavailable in the editor."
 
-#: wp-admin/includes/ajax-actions.php:2742
+#: wp-admin/includes/ajax-actions.php:2744
 msgid "%s failed to embed."
 msgstr "%s failed to embed."
 
-#: wp-admin/includes/ajax-actions.php:2690
+#: wp-admin/includes/ajax-actions.php:2692
 #: wp-admin/includes/plugin-install.php:485
 msgid "(based on %s rating)"
 msgid_plural "(based on %s ratings)"
 msgstr[0] "(based on %s rating)"
 msgstr[1] "(based on %s ratings)"
 
-#: wp-admin/includes/ajax-actions.php:1872
+#: wp-admin/includes/ajax-actions.php:1874
 msgid "You don't have permission to attach files to this post."
 msgstr "You don't have permission to attach files to this post."
 
-#: wp-admin/includes/ajax-actions.php:1858
+#: wp-admin/includes/ajax-actions.php:1860
 msgid "You don't have permission to upload files."
 msgstr "You don't have permission to upload files."
 
-#: wp-admin/includes/ajax-actions.php:1680
+#: wp-admin/includes/ajax-actions.php:1682
 #: wp-admin/includes/class-wp-posts-list-table.php:867
 #: wp-admin/includes/class-wp-posts-list-table.php:1292
 #: wp-admin/includes/meta-boxes.php:79 wp-admin/includes/meta-boxes.php:102
 msgid "Scheduled"
 msgstr "Scheduled"
 
-#: wp-admin/includes/ajax-actions.php:1668
+#: wp-admin/includes/ajax-actions.php:1670
 #: wp-admin/includes/class-wp-posts-list-table.php:380
 #: wp-admin/includes/class-wp-posts-list-table.php:1073
 msgid "Date"
 msgstr "Date"
 
-#: wp-admin/includes/ajax-actions.php:1668
+#: wp-admin/includes/ajax-actions.php:1670
 msgid "Type"
 msgstr "Type"
 
@@ -9136,8 +9136,8 @@ msgstr "Category added."
 msgid "Items deleted."
 msgstr "Items deleted."
 
-#: wp-admin/edit-tags.php:261 wp-admin/includes/ajax-actions.php:1622
-#: wp-admin/includes/ajax-actions.php:1627
+#: wp-admin/edit-tags.php:261 wp-admin/includes/ajax-actions.php:1624
+#: wp-admin/includes/ajax-actions.php:1629
 msgid "Item not updated."
 msgstr "Item not updated."
 
@@ -9357,7 +9357,7 @@ msgstr "Pending"
 msgid "View Comment"
 msgstr "View Comment"
 
-#: wp-admin/edit-form-comment.php:74 wp-admin/includes/ajax-actions.php:1668
+#: wp-admin/edit-form-comment.php:74 wp-admin/includes/ajax-actions.php:1670
 #: wp-admin/includes/class-wp-posts-list-table.php:1285
 msgid "Status"
 msgstr "Status"
@@ -9390,11 +9390,11 @@ msgstr "E-mail (%s):"
 msgid "Name:"
 msgstr "Name:"
 
-#: wp-admin/edit-form-advanced.php:557 wp-admin/includes/ajax-actions.php:2104
+#: wp-admin/edit-form-advanced.php:557 wp-admin/includes/ajax-actions.php:2106
 msgid "Last edited on %1$s at %2$s"
 msgstr "Last edited on %1$s at %2$s"
 
-#: wp-admin/edit-form-advanced.php:555 wp-admin/includes/ajax-actions.php:2102
+#: wp-admin/edit-form-advanced.php:555 wp-admin/includes/ajax-actions.php:2104
 msgid "Last edited by %1$s on %2$s at %3$s"
 msgstr "Last edited by %1$s on %2$s at %3$s"
 
@@ -10013,7 +10013,7 @@ msgid "This screen is used to customize the header section of your theme."
 msgstr "This screen is used to customize the header section of your theme."
 
 #: wp-admin/custom-background.php:370 wp-admin/custom-header.php:801
-#: wp-admin/includes/ajax-actions.php:1892
+#: wp-admin/includes/ajax-actions.php:1894
 msgid "The uploaded file is not a valid image. Please try again."
 msgstr "The uploaded file is not a valid image. Please try again."
 
@@ -10449,167 +10449,167 @@ msgstr "Thank you for creating with <a href=\"%s\">WordPress</a>."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:179
+#: wp-admin/about.php:183
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[1] "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:175
+#: wp-admin/about.php:179
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[1] "<strong>Version %1$s</strong> addressed %2$s bugs."
 
-#: wp-admin/about.php:167
+#: wp-admin/about.php:171
 msgid "Security Release"
 msgid_plural "Security Releases"
 msgstr[0] "Security Releases"
 msgstr[1] "Security Releases"
 
-#: wp-admin/about.php:166
+#: wp-admin/about.php:170
 msgid "Maintenance Release"
 msgid_plural "Maintenance Releases"
 msgstr[0] "Maintenance Releases"
 msgstr[1] "Maintenance Releases"
 
-#: wp-admin/about.php:154
+#: wp-admin/about.php:158
 msgid "Go to Dashboard"
 msgstr "Go to Dashboard"
 
-#: wp-admin/about.php:154
+#: wp-admin/about.php:158
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Go to Dashboard &rarr; Home"
 
-#: wp-admin/about.php:150
+#: wp-admin/about.php:154
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Return to Dashboard &rarr; Updates"
 
-#: wp-admin/about.php:150
+#: wp-admin/about.php:154
 msgid "Return to Updates"
 msgstr "Return to Updates"
 
 #. translators: 1: WP_Query, 2: WP_Comment_Query, 3: WP_User_Query
-#: wp-admin/about.php:141
+#: wp-admin/about.php:145
 msgid "%1$s, %2$s, and %3$s now support complex ordering with named meta query clauses."
 msgstr "%1$s, %2$s, and %3$s now support complex ordering with named meta query clauses."
 
-#: wp-admin/about.php:138
+#: wp-admin/about.php:142
 msgid "Complex query ordering"
 msgstr "Complex query ordering"
 
 #. translators: 1: Term splitting guide link
-#: wp-admin/about.php:135
+#: wp-admin/about.php:139
 msgid "Terms shared across multiple taxonomies will be split when one of them is updated. Find out more in the <a href=\"%1$s\">Plugin Developer Handbook</a>."
 msgstr "Terms shared across multiple taxonomies will be split when one of them is updated. Find out more in the <a href=\"%1$s\">Plugin Developer Handbook</a>."
 
-#: wp-admin/about.php:132
+#: wp-admin/about.php:136
 msgid "Shared term splitting"
 msgstr "Shared term splitting"
 
 #. translators: %s wp.a11y.speak()
-#: wp-admin/about.php:128
+#: wp-admin/about.php:132
 msgid "You can now send audible notifications to screen readers in JavaScript with %s. Pass it a string, and an update will be sent to a dedicated ARIA live notifications area."
 msgstr "You can now send audible notifications to screen readers in JavaScript with %s. Pass it a string, and an update will be sent to a dedicated ARIA live notifications area."
 
-#: wp-admin/about.php:125
+#: wp-admin/about.php:129
 msgid "JavaScript accessibility"
 msgstr "JavaScript accessibility"
 
-#: wp-admin/about.php:123
+#: wp-admin/about.php:127
 msgid "Database character encoding has changed from utf8 to utf8mb4, which adds support for a whole range of new 4-byte characters."
 msgstr "Database character encoding has changed from utf8 to utf8mb4, which adds support for a whole range of new 4-byte characters."
 
-#: wp-admin/about.php:122
+#: wp-admin/about.php:126
 msgid "utf8mb4 support"
 msgstr "utf8mb4 support"
 
-#: wp-admin/about.php:118
+#: wp-admin/about.php:122
 msgid "Under the Hood"
 msgstr "Under the Hood"
 
-#: wp-admin/about.php:113
+#: wp-admin/about.php:117
 msgid "Goodbye boring loading screen, hello smooth and simple plugin updates. Click <em>Update&nbsp;Now</em> and watch the magic happen."
 msgstr "Goodbye boring loading screen, hello smooth and simple plugin updates. Click <em>Update&nbsp;Now</em> and watch the magic happen."
 
-#: wp-admin/about.php:112
+#: wp-admin/about.php:116
 msgid "Streamlined plugin updates"
 msgstr "Streamlined plugin updates"
 
-#: wp-admin/about.php:108
+#: wp-admin/about.php:112
 msgid "Paste links from Tumblr.com and Kickstarter and watch them magically appear right in the editor. With every release, your publishing and editing experience get closer together."
 msgstr "Paste links from Tumblr.com and Kickstarter and watch them magically appear right in the editor. With every release, your publishing and editing experience get closer together."
 
-#: wp-admin/about.php:107
+#: wp-admin/about.php:111
 msgid "Even more embeds"
 msgstr "Even more embeds"
 
-#: wp-admin/about.php:103
+#: wp-admin/about.php:107
 msgid "Browse and preview your installed themes from the Customizer. Make sure the theme looks great with <em>your</em> content, before it debuts on your site. "
 msgstr "Browse and preview your installed themes from the Customizer. Make sure the theme looks great with <em>your</em> content, before it debuts on your site. "
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:106
 msgid "Switch themes in the Customizer"
 msgstr "Switch themes in the Customizer"
 
-#: wp-admin/about.php:94
+#: wp-admin/about.php:98
 msgid "https://codex.wordpress.org/Emoji"
 msgstr "https://codex.wordpress.org/Emoji"
 
 #. translators: 1: heart emoji, 2: frog face emoji, 3, monkey emoji, 4: pizza
 #. emoji, 5: Emoji Codex link
-#: wp-admin/about.php:94
+#: wp-admin/about.php:98
 msgid "Don&#8217;t use any of those characters? You can still have fun &mdash; emoji are now available in WordPress! Get creative and decorate your content with %1$s, %2$s, %3$s, %4$s, and all the many other <a href=\"%5$s\">emoji</a>."
 msgstr "Don&#8217;t use any of those characters? You can still have fun &mdash; emoji are now available in WordPress! Get creative and decorate your content with %1$s, %2$s, %3$s, %4$s, and all the many other <a href=\"%5$s\">emoji</a>."
 
-#: wp-admin/about.php:91
+#: wp-admin/about.php:95
 msgid "Writing in WordPress, whatever your language, just got better. WordPress 4.2 supports a host of new characters out-of-the-box, including native Chinese, Japanese, and Korean characters, musical and mathematical symbols, and hieroglyphs."
 msgstr "Writing in WordPress, whatever your language, just got better. WordPress 4.2 supports a host of new characters out-of-the-box, including native Chinese, Japanese, and Korean characters, musical and mathematical symbols, and hieroglyphs."
 
-#: wp-admin/about.php:90
+#: wp-admin/about.php:94
 msgid "Extended character support"
 msgstr "Extended character support"
 
-#: wp-admin/about.php:76 wp-admin/tools.php:16 wp-admin/tools.php:40
+#: wp-admin/about.php:80 wp-admin/tools.php:16 wp-admin/tools.php:40
 #: wp-admin/tools.php:51
 msgid "Press This"
 msgstr "Press This"
 
-#: wp-admin/about.php:73 wp-admin/tools.php:48
+#: wp-admin/about.php:77 wp-admin/tools.php:48
 msgid "Drag the bookmarklet below to your bookmarks bar. Then, when you&#8217;re on a page you want to share, simply &#8220;press&#8221; it."
 msgstr "Drag the bookmarklet below to your bookmarks bar. Then, when you are on a page you want to share, simply &#8220;press&#8221; it."
 
-#: wp-admin/about.php:72
+#: wp-admin/about.php:76
 msgid "Clip it, edit it, publish it. Get familiar with the new and improved Press This. From the <a href=\"%s\">Tools</a> menu, add Press This to your browser bookmark bar or your mobile device home screen. Once installed you can share your content with lightning speed. Sharing your favorite videos, images, and content has never been this fast or this easy."
 msgstr "Clip it, edit it, publish it. Get familiar with the new and improved Press This. From the <a href=\"%s\">Tools</a> menu, add Press This to your browser bookmark bar or your mobile device home screen. Once installed you can share your content with lightning speed. Sharing your favourite videos, images, and content has never been this fast or this easy."
 
-#: wp-admin/about.php:71
+#: wp-admin/about.php:75
 msgid "An easier way to share content"
 msgstr "An easier way to share content"
 
 #. translators: 1: WordPress version number.
-#: wp-admin/about.php:57 wp-admin/about.php:171
+#: wp-admin/about.php:61 wp-admin/about.php:175
 msgid "<strong>Version %1$s</strong> addressed a security issue."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues."
 msgstr[0] "<strong>Version %1$s</strong> addressed some security issues."
 msgstr[1] "<strong>Version %1$s</strong> addressed some security issues."
 
 #: wp-admin/about.php:47 wp-admin/about.php:51 wp-admin/about.php:55
-#: wp-admin/about.php:59 wp-admin/about.php:186
+#: wp-admin/about.php:59 wp-admin/about.php:63 wp-admin/about.php:190
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "For more information, see <a href=\"%s\">the release notes</a>."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
 #: wp-admin/about.php:45 wp-admin/about.php:49 wp-admin/about.php:53
-#: wp-admin/about.php:183
+#: wp-admin/about.php:57 wp-admin/about.php:187
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[1] "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 
-#: wp-admin/about.php:44 wp-admin/about.php:168
+#: wp-admin/about.php:44 wp-admin/about.php:172
 msgid "Maintenance and Security Release"
 msgid_plural "Maintenance and Security Releases"
 msgstr[0] "Maintenance and Security Releases"
@@ -10630,8 +10630,8 @@ msgid "What&#8217;s New"
 msgstr "What is New"
 
 #: wp-admin/about.php:31 wp-admin/credits.php:87 wp-admin/freedoms.php:24
-#: wp-admin/includes/ajax-actions.php:2900
-#: wp-admin/includes/ajax-actions.php:2941
+#: wp-admin/includes/ajax-actions.php:2902
+#: wp-admin/includes/ajax-actions.php:2943
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:406
 #: wp-admin/includes/class-wp-plugins-list-table.php:557
 #: wp-admin/includes/update.php:164 wp-admin/includes/update.php:188
