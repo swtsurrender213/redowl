@@ -20,9 +20,9 @@
 		// If single page, display the title
 		// Else, we display the title in a link
 		if ( is_single() ) : ?>
-			<h1><?php the_title(); ?></h1>
+			<h1 class="text1"><?php the_title(); ?></h1>
 		<?php else : ?>
-			<h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			<h1><a class="text1" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 		<?php endif; ?>
 
 	

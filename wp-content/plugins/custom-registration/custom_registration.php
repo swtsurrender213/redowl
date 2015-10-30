@@ -7,8 +7,52 @@
     Version: 1.0
     Author URI: http://www.jts.name
     */
+	
+add_action('wp_ajax_searchemail','searchemail');	
 
-function wp_demo_load_css(){
+function searchemail(){
+$email=$_POST['email'];
+if ( email_exists( $email ) )
+           $status=0;
+       else
+          $status=1;
+
+	  $returnArray=array('status'=> $status);
+	  echo json_encode($returnArray);
+	  die();
+
+}
+	
+	
+add_action('wp_ajax_checkpass','checkpass');	
+
+function checkpass(){
+$passW=$_POST['password'];
+if (strlen($passW) < 8 ) 
+$status=0;
+ else
+$status=1; 
+
+	  $returnArray=array('status'=> $status);
+	  echo json_encode($returnArray);
+	  die();
+
+}
+
+add_action('wp_ajax_searchuser','searchuser');	
+
+function searchuser(){
+$username=$_POST['username'];
+if ( username_exists( $username ) )
+           $status=0;
+       else
+          $status=1;
+
+	  $returnArray=array('status'=> $status);
+	  echo json_encode($returnArray);
+	  die();
+}	
+function wp_demo_load_scripts(){
 
 //get the framework
 $existing=get_option("framework");
@@ -24,9 +68,15 @@ $existing=get_option("framework");
 	wp_enqueue_style('html5', plugins_url('/css/html5form.css',__FILE__));
 	}
 	
+	wp_enqueue_script( 'search_username',
+	plugins_url('js/search_username.js',__FILE__ ), 
+	array('jquery'), '1.0', true);
+	
+	
+	
 } //end wp_demo_load_css
 
-add_action('wp_enqueue_scripts','wp_demo_load_css');
+add_action('wp_enqueue_scripts','wp_demo_load_scripts');
 	
 
 //directory name of our plugin folder
@@ -120,11 +170,10 @@ $userdata = array(
         'user_login'    =>   $username,
         'user_email'    =>   $email,
         'user_pass'     =>   $password,
-        'user_url'      =>   $website,
         'first_name'    =>   $fname,
         'last_name'     =>   $lname,
         'nickname'      =>   $nickname,
-        'description'   =>   $bio,
+		'description'   =>   $bio,
         );
 
 $user_id=wp_insert_user($userdata);
@@ -147,21 +196,23 @@ function show_registration_form_bootstrap($error=""){ ?>
    <?php } ?>
    
    <div class="panel panel-primary">
-    <div style="background:#16a085;" class="panel-heading">required *</div>
+    <div style="background:#e32026;" class="panel-heading">Please Fill Required Fields*</div>
     <div class="panel-body">
      <div class="col-lg-6 col-lg-offset-3 centered">
 	 
-		<form  role="form" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
+		<form  role="form" action="" method="post">
 		<div class="form-group">
 		<label for="username">Username <strong>*</strong></label>
-		<input type="text" name="username" 
-		value="<?php if(isset($_POST['username'])) echo $_POST['username'];?>">
+		<input id="username" type="text" name="username" value="<?php if(isset($_POST['username'])) echo $_POST['username'];?>">
+		<!-- result from ajax success -->
+		<div id="result">&nbsp;</div>
 		</div>
-		 
+		
 		<div class="form-group">
 		<label for="password">Password <strong>*</strong></label>
-		<input type="password" name="password" 
+		<input id="passW" type="password" name="password" 
 		value="<?php if(isset($_POST['password'])) echo $_POST['password'];?>">
+		<div id="result1">&nbsp;</div>
 		</div>
 		
 		<div class="form-group">
@@ -172,15 +223,11 @@ function show_registration_form_bootstrap($error=""){ ?>
 		 
 		<div class="form-group">
 		<label for="email">Email <strong>*</strong></label>
-		<input type="text" name="email" 
+		<input id="email" type="text" name="email" 
 		value="<?php if(isset($_POST['email'])) echo $_POST['email'];?>">
+		<div id="result2">&nbsp;</div>
 		</div>
 		 
-		<div class="form-group">
-		<label for="website">Website</label>
-		<input type="text" name="website" 
-		value="<?php if(isset($_POST['website'])) echo $_POST['website'];?>">
-		</div>
 		 
 		<div class="form-group">
 		<label for="firstname">First Name</label>
@@ -206,7 +253,7 @@ function show_registration_form_bootstrap($error=""){ ?>
 		<?php if(isset($_POST['bio'])) echo $_POST['bio'];?>
 		</textarea>
 		</div>
-		<input type="submit" name="Submit" value="Register"/>
+		<input style=""  type="submit" name="Submit" value="Register"/>
 		
 		</form>
 		
@@ -273,16 +320,6 @@ function show_registration_form_foundation($error=""){ ?>
           <input type="text" name="email" 
 		value="<?php if(isset($_POST['email'])) echo $_POST['email'];?>">
 	  </div>
-      </div>
-		 
-		   <div class="row">
-        <div class="small-3 columns">
-          <label class="right inline" for="website">Website</label>
-		</div>
-        <div class="small-9 columns">
-          <input type="text" name="website" 
-		value="<?php if(isset($_POST['website'])) echo $_POST['website'];?>">
-		   </div>
       </div>
 		 
 		   <div class="row">
@@ -368,10 +405,6 @@ function show_registration_form_html5($error=""){ ?>
 		<input type="text" name="email" 
 		value="<?php if(isset($_POST['email'])) echo $_POST['email'];?>"><br>
 		
-		
-		<label for="website">Website</label>
-		<input type="text" name="website" 
-		value="<?php if(isset($_POST['website'])) echo $_POST['website'];?>"><br>
 	
 		
 		<label for="firstname">First Name</label>

@@ -293,11 +293,7 @@ add_filter ( 'post_class' , 'nadzhq_minimal_oddeven_post_class' );
 global $current_class;
 $current_class = 'odd';
 
-// Posts The Excerpt Read More.
-function nadzhq_minimal_new_excerpt_more( $more ) {
-  return '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">'.__('View Detail', 'nadzhq-minimal') .'</a>';
-}
-add_filter( 'excerpt_more', 'nadzhq_minimal_new_excerpt_more' );
+
 
 /**
  ** Sidebar Menus
